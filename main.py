@@ -77,8 +77,8 @@ while True:
                 if sel == "3":
                     al.size = val
 
-    # elif command == "5":
-
+    elif command == "5":
+        db.find_by_filter()
 
     elif command == "6":
         break

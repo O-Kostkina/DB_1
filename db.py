@@ -68,6 +68,16 @@ class DataBase:
                 return i
         return None
 
+    def find_by_filter(self):
+        s = set()
+        for i in self.photos:
+            if i.format == "bmp":
+                s.add(i.album.id)
+        for i in list(s):
+            print(self.get_album_by_id(str(i)))
+
+
+
     #def update_value(self, album):
 
     #def update_value(self, photo):
